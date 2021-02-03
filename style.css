@@ -1,6 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
 * {
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+	margin:0; padding:0;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
-h1, h2 { 
-text-align:center 
+
+#global {  background-color:#555; width:950px; position:absolute; left:50%; top:50%; margin-top:-300px; margin-left:-475px;}
+h1, h2, #footer  { height:50px; background-color:black; color:white; text-align:center;}
+#menugauche { float:left; width:110px; background-color:#555; color:white; padding:20px;}
+#menudroit { padding:20px;float:right; width:110px; background-color:#555;color:white;}
+
+#contenu { height:500px; overflow:auto; padding:20px; margin:0 150px;  background-color:white;}
+#contenu p { margin-bottom:20px;}
+h3 { border-bottom:1px solid;  margin-bottom:40px;}
+#menudroit ul, #menugauche ul {list-style-type:none;}
+#menudroit li, #menugauche li { margin-left:20px;}
+#menudroit li a, #menugauche li a {  color:white;}
+#menudroit h2, #menugauche h2 { font-size:16px;}
+
+
+@media print {
+	.noprint { display:none;}
+	#contenu { height:auto; margin:0; }
+#global {  width:auto; position:relative; top:0; left:0; margin:0;}
 }
