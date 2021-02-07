@@ -6,7 +6,7 @@
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
-#global {  background-color: rgb(196, 169, 128); width:1050px; position:absolute; left:50%; top:50%; margin-top:-300px; margin-left:-525px;}
+#global {  background-color: rgb(196, 169, 128); width:device-width; position:absolute; }
 #intro {text-align: justify; padding-top: 20px; padding-bottom: 20px; padding-left: 50px; padding-right: 50px; font-size: large;}
 h1, h2, #footer { height:50px; background-color:black; color:white; text-align:center; padding-top: 20px;}
 h3 {text-align: center; padding-top: 10px; padding-bottom: 10px;} 
