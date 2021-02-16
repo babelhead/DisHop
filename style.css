@@ -6,20 +6,22 @@
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
-#global {  background-color: rgb(196, 169, 128); width:device-width; position:absolute; }
-#intro {text-align: justify; padding-top: 20px; padding-bottom: 20px; padding-left: 50px; padding-right: 50px; font-size: large;}
-h1, h2, #footer { height:50px; background-color:black; color:white; text-align:center; padding-top: 20px;}
+#global { background-image: url("background.jpg"); width:device-width; position:absolute; }
+#intro {background-color:white; opacity: 0.7; text-align: justify; padding-top: 20px; padding-bottom: 20px; padding-left: 70px; padding-right: 70px; font-size: large;}
+h1, h2, #footer { height:50px; background-color:black; opacity: 0.7; color:white; text-align:center; padding-top: 20px;}
 h3 {text-align: center; padding-top: 10px; padding-bottom: 10px;} 
-img {padding-top: 10px; padding-bottom: 10px;}
-#menugauche { float:left; width:110px; background-color: black; color:white; padding:20px;}
-#menudroit { padding:20px;float:right; width:110px; background-color: black; color:white;}
+img {border-style:solid; border-color: black; border-width: 1px; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto; z-index:auto;}
+/* got an issue with the image display: how to remove the transparency resulting from the opacity of the background (image and/or color?) */
+#menugauche { float:left; width:110px; background-color: black; opacity: 0.7; color:white; padding:20px;}
+#menudroit { padding:20px;float:right; width:110px; background-color: black; opacity: 0.7; color:white;}
 
-#contenu { height:500px; overflow:auto; padding:20px; margin:0 50px;  background-color:rgb(245, 217, 175); text-align: justify;}
+#contenu {border-style: solid; height:500px; overflow:auto; padding:20px; margin:0 50px;  background-color:white; opacity: 0.8; text-align: justify;}
 #contenu p { margin-bottom:20px; font-size: large;}
 #menudroit ul, #menugauche ul {list-style-type:none;}
 #menudroit li, #menugauche li { text-align: center;}
 #menudroit li a, #menugauche li a {  color:white;}
 #menudroit h2, #menugauche h2 { font-size:16px;}
+
 
 
 @media print {
