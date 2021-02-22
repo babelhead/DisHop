@@ -10,15 +10,21 @@
 #intro {background-color:white; opacity: 0.7; text-align: justify; padding-top: 20px; padding-bottom: 20px; padding-left: 70px; padding-right: 70px; font-size: large;}
 h1, h2, #footer { height:50px; background-color:black; opacity: 0.7; color:white; text-align:center; padding-top: 20px;}
 #footer a:visited {color: white;}
+#footer a:link {color: white;}
 a:visited {color: rgb(55, 55, 97);}
 h3 {text-align: center; padding-top: 10px; padding-bottom: 10px;} 
-img {border-style:solid; border-color: black; border-width: 1px; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto; z-index:auto;}
-/* got an issue with the image display: how to remove the transparency resulting from the opacity of the background (image and/or color?) */
+
 #menugauche { float:left; width:110px; background-color: black; opacity: 0.7; color:white; padding:20px;}
 #menudroit { padding:20px;float:right; width:110px; background-color: black; opacity: 0.7; color:white;}
 
-#contenu {border-style: solid; height:500px; overflow:auto; padding:20px; margin:0 50px;  background-color:white; opacity: 0.8; text-align: justify;}
+#contenu {border-style: solid; height:500px; overflow:auto; padding:20px; margin:0 50px;  background-color: rgb(255, 255, 255, 0.7) ; text-align: justify;}
 #contenu p { margin-bottom:20px; font-size: large;}
+img {object-fit: contain; opacity:1; border-style:solid; border-color: black; border-width: 1px; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto; z-index:auto;}
+/* got an issue with the image display: how to remove the transparency resulting from the opacity of the background (image and/or color?) 
+- need to make background transparent for the space of #contenu through some other means than background opacity 
+GOT IT! thanks to Philippe: the attribute "opacity" applies to the content; for the colour one must define it as the 4th property of RGB colour choice*/
+article {border: groove 2px black; padding: 10px; border-radius: 5px; margin-bottom: 20px;}
+/* iframe {width:100%; height:500px; outline:none; padding:none; margin: none;} */
 #menudroit ul, #menugauche ul {list-style-type:none;}
 #menudroit li, #menugauche li { text-align: center;}
 #menudroit li a, #menugauche li a {  color:white;}

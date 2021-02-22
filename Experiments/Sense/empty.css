@@ -1,0 +1,4 @@
+p { text-align: center; padding: 80px; color: black; font-size: 200px; margin: auto;}
+a:link {text-decoration: none; color: black;}
+a:visited {color: black;}
+a:hover {color: white; }
