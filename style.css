@@ -9,7 +9,11 @@
 #global { background-image: url("background.jpg"); width:device-width; position:absolute; }
 #intro {background-color:white; opacity: 0.7; text-align: justify; padding-top: 20px; padding-bottom: 20px; padding-left: 70px; padding-right: 70px; font-size: large;}
 h1, h2, #footer { height:50px; background-color:black; opacity: 0.7; color:white; text-align:center; padding-top: 20px;}
+<<<<<<< HEAD
 #footer a:visited {color: white;}
+=======
+#footer a:visited a:link {color: white;}
+>>>>>>> a4c010a48eec1ca51469477ddef22a3ac6c1971d
 #footer a:link {color: white;}
 a:visited {color: rgb(55, 55, 97);}
 h3 {text-align: center; padding-top: 10px; padding-bottom: 10px;} 
