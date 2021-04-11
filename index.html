@@ -20,7 +20,16 @@
             You can also see the backside of my baby steps <a href="https://github.com/babelhead/DisHop/blob/main/index.html" target="_blank">here</a>).
             <br>
             <button id="b1">Let me say hi!</button>
-            <script src="script.js"></script>
+            <script>
+                let hello = document.getElementById("b1");
+                hello.addEventListener("click", whatsYourName);
+                function whatsYourName() {
+                prompt("Hello there! What's your name?");
+                let para = document.createElement("p");
+                para.textContent = "Thanks for popping by" + whatsYourName + "! I hope you'll find some of this interesting!"
+                document.body.appendChild(para); 
+                }
+            </script>
             </p>
         <div id="menugauche" class="noprint">
         <h2>Weeks so far</h2>
