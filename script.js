@@ -4,7 +4,7 @@ hello.addEventListener("click", display);
 function display() {
 let name = prompt("Hello there! What's your name?");
 let para = document.createElement("p");
-  if(name === "" || " " ) {
+  if(name === "" || name === " " ) {
   para.textContent = "OK, you might not want to tell me your name, but thanks anyway for popping by! I hope you'll find some of this interesting."
   document.body.appendChild(para);
   } else {
