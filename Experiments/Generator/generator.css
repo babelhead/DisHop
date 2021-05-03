@@ -1,5 +1,5 @@
 body {background-color: plum;}
-#b1 {display: block; width: 90%; margin: auto; padding: 20px; border-radius: 10px;
+#b1 {display: block; width: 90%; margin-top: 30px; margin-left: auto; margin-right: auto; padding: 20px; border-radius: 10px;
     background-color: pink; font-family: fantasy; font-weight: bold; font-size: large; font-style: italic;}
 p {text-align: center;
     font-size: x-large; color: purple; font-family: cursive; 
