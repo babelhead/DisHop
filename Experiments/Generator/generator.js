@@ -14,9 +14,9 @@ let ajouter = document.querySelector("#b1")//getElementById("b1");
             }
             
   function genereTexte() {
-  let verbes = ["frotte", "détends", "épluche", "caresse", "déplie", "découpe", "raffine", "lave", "branche", "touche"];
-  let objects = ["la carotte", "le chocolat", "les narines", "les mots d'amour", "les haricots", "la patate", "l'oignon", "la culotte", "la bouteille", "l'oreiller"];
-  let verbe = Math.round(Math.random() * 10);
-  let object = Math.round(Math.random() * 10);
+  let verbes = ["frotte", "détends", "épluche", "caresse", "déplie", "découpe", "raffine", "lave", "branche", "touche", "démonte", "gratte", "raccords", "montre", "glisse"];
+  let objects = ["la carotte", "le chocolat", "les narines", "les mots d'amour", "les haricots", "la patate", "l'oignon", "la culotte", "la bouteille", "l'oreiller", "le caillou", "le goutte de lait", "les poils"];
+  let verbe = Math.round(Math.random() * 15);
+  let object = Math.round(Math.random() * 13);
   return(verbes[verbe] + "-moi " + objects[object]);
   }
