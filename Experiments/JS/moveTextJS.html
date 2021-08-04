@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aimez-vous...</title>
+    <style>
+        * {background-color: lightgray;}
+        h1 {text-align: center; font-family: cursive; font-weight:bold; font-size: x-large; margin-top: 100px; padding: 30px;}
+        p {text-align: center; font-family: cursive; font-size: 2rem;}
+        #container {
+            width: 100%;
+            height: 600px;
+            position: relative;
+            display:flex;
+            justify-content: center;
+        }
+        #question {
+            position: absolute;
+            width:fit-content;
+            height:fit-content;
+            text-align: center; 
+            z-index: 1;
+        }
+        #reponse {
+            position: absolute;
+            top: 120px;
+            width: 100%;
+            height:fit-content;
+            text-align: center; 
+        }
+        table {
+            width: 100%;
+            text-align: center; 
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: x-large;
+        }
+        th {
+            padding: 30px; 
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <h1>On vous demande si vous aimez parler de vos livres</h1> 
+    <div id="container">
+        <div id="question">
+            <p>S'agit-il d'un roman?</p>
+        </div>
+       
+        <div id="reponse">
+            <table>
+                <tr>
+                    <th>OUI</th>
+                    <th>NON</th> 
+                </tr>
+            </table>
+        </div>
+    </div>
+ <script>
+        document.getElementById("question").addEventListener("mouseover", moveText);
+
+            function moveText() {
+                let id = null;
+                const elem = document.getElementById("question"); 
+                let posX = 0;
+                let posY = 0;
+                clearInterval(id);
+                id = setInterval(frame, 300);
+                function frame() {
+                    let x = window.innerWidth;
+                    posXx = Math.round(Math.random() * (x - 266));
+                    posYy = Math.round(Math.random() * 600);
+                        if (posX == posXx) /* only issue here is that this condition is very difficult to fulfill, and on each new hover over the function seems to repeat itself and speed up */ {
+                          clearInterval(id);
+                        } else {
+                            posX++; 
+                            posY++;
+                            elem.style.top = posYy + "px"; 
+                            elem.style.left = posXx + "px";
+
+                     /* original code: https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_animate_3:
+                        if (pos == 350) {
+                        clearInterval(id);
+                        } else {
+                        pos++; 
+                        elem.style.top = pos + "px"; 
+                        elem.style.left = pos + "px"; */
+                    }
+                }
+            }
+       
+    </script>  
+</body>
+</html>

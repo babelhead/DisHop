@@ -1,0 +1,63 @@
+* {background-color: lightgray;}
+h1 {text-align: center; font-family: cursive; font-weight:bold; font-size: x-large; margin-top: 100px; padding: 50px;}
+a {text-decoration: none; color: inherit;}
+a:hover {color: rgb(50, 50, 50); text-shadow: rgb(87, 86, 86);}
+footer {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: large; text-align: center; color: dimgrey; padding-bottom: 20px;}
+#container {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 0px;
+    display:flex;
+    justify-content: center;
+}
+#question {
+    position: absolute;
+    width:fit-content;
+    height:fit-content;
+    text-align: center; 
+    font-family: cursive; 
+    font-size: 2rem;
+}
+#duras {
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    z-index: 1;
+}
+.text {
+    font-family: monospace;
+    font-size: 40px;
+    color: dimgrey;
+    text-align: center;
+}
+#reponse {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height:fit-content;
+    text-align: center;
+    margin:auto; 
+}
+table {
+    width: 100%;
+    text-align: center; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+}
+th {
+    padding: 30px; 
+    text-align: center;
+    width: 50%;
+    margin:auto;
+}
+span{
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+span.fade{
+    opacity: 1;
+    transform: translateY(0px);
+}
