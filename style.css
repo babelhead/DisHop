@@ -38,6 +38,16 @@ article {border: groove 2px black; padding: 10px; border-radius: 5px; margin-bot
 #menudroit li a:visited, #menugauche li a:visited { color:white; text-decoration: none;}
 #menudroit li a:hover, #menugauche li a:hover { color:rgb(150, 148, 148); text-decoration: none;}
 #menudroit h2, #menugauche h2 { font-size:17px;}
+span{
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+span.fade{
+    opacity: 1;
+    transform: translateY(0px);
+}
 
 
 @media print {

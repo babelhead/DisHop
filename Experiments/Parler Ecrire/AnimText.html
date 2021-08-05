@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aimez-vous...</title>
+    <style>
+    * {background-color: lightgray;}
+    h1 {text-align: center; font-family: cursive; font-weight:bold; font-size: xx-large;  padding-top: 30px; padding-bottom: 20px;}
+    p {text-align: justify; font-family: 'Courier New', Courier, monospace; font-size: large; padding-bottom:5px; margin-left: 40px; margin-right: 40px;}
+    a {text-decoration: none; color: inherit;}
+    a:hover {font-size: 2rem; color:rgb(50, 50, 50);}
+    footer {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: large; text-align: center; color: dimgrey; padding-bottom: 20px;}
+    img {display:block; margin-left:auto; margin-right: auto; padding: 20px; margin-bottom: 20px;}
+    #container {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    display:flex;
+    justify-content: center;}
+    span{
+    opacity: 0;
+    transition: all 0.2s ease;
+    transform: translateY(30px);
+    display: inline;
+}
+span.fade{
+    opacity: 1;
+    transform: translateY(0px);
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>On vous demande si vous aimez parler de vos livres</h1> 
+        <p class="text">Duras est un monstre. Vous vous demandez si quelqu’un l’a pensé avant vous, et qui cela peut bien être. Vous pourriez en parler ensemble, ce serait réconfortant de se dire quand même, cette Duras est un monstre. On aurait moins peur de ses phrases, terribles.</p>
+    </div>
+    <script src="text.js"></script>
+</body>
+</html>
