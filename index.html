@@ -296,11 +296,13 @@
         </article>
         <article>
             <h3 id="week29">Thursday 5 August</h3>
+            <div>
             <p class="text">
                 Also tried out another text animation trick with JS, making the text appear letter by letter, each sliding up and fading in to its final place and state one after the other. I realized only when testing on a longer paragraph that this method makes the spaces disappear between the words, so it all comes very hard to read. It happens in the video as well, by the way, but the guy ignores it (or doesn’t even see – with his capitalized two-word example, it’s less bothering, but still… the method’s possible uses remain very limited with this unwanted side effect. Then on another try today I realize that in fact the splitting method itself doesn’t remove the spaces like I thought, and if I change the display mode of the span from inline-block to inline, then the spaces do remain in place. Except that this removes the slide up effect, which the default inline span cannot handle. I have no idea why the display method would affect the spaces, if they are accounted for like any other character in the split array. But I guess this is where you really need to understand the ins and outs of each option and property, to understand the implications and potential side effects, incompatibilities, etc.
             </p>
-        </article>
+        </div>
         <script src="text.js"></script>
+        </article>
         <p><a href="#topBox">Back to top</a></p>
     </div>
     <p id="footer"><a href="#top">Back to top</a></p>
