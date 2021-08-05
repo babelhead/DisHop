@@ -11,7 +11,7 @@ function onTick(){
     const span = text.querySelectorAll("span")[char];
     span.classList.add("fade");
     char++;
-    if(char === splitText.length * 2){
+    if(char === splitText.length){
         complete();
         return;
     }
