@@ -6,7 +6,7 @@ for(let i=0; i < splitText.length; i++){
     text.innerHTML += "<span>" + splitText[i] + "<span>";
 }
 let char = 0;
-let timer = setInterval(onTick, 10);
+let timer = setInterval(onTick, 5);
 function onTick(){
     const span = text.querySelectorAll("span")[char];
     span.classList.add("fade");
