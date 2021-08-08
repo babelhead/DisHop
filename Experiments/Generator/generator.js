@@ -20,3 +20,6 @@ let ajouter = document.querySelector("#b1")//getElementById("b1");
   let object = Math.round(Math.random() * 13);
   return(verbes[verbe] + "-moi " + objects[object]);
   }
+
+  /* need to add a function/formatting to limit the lines to the screen size, 
+or make the page scroll down automatically when new lines appear, leaving the button visible on top --> */

@@ -45,7 +45,10 @@ span{
 span.fade{
     opacity: 1;
 }
-
+#launchAnim:hover {
+	color: rgb(58, 58, 58);
+	font-weight: bold;
+}
 
 @media print {
 	.noprint { display:none;}

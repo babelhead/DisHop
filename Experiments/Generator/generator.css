@@ -4,3 +4,5 @@ body {background-color: plum;}
 p {text-align: center;
     font-size: x-large; color: purple; font-family: cursive; 
 }
+/* need to add a function/formatting to limit the lines to the screen size, 
+or make the page scroll down automatically when new lines appear, leaving the button visible on top --> */
