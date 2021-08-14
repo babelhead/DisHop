@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>écrire vite</title>
+    <script type="text/javascript" src="test.js"></script>
+</head>
+<body>
+    <p id="write">arena</p>
+    <script>
+        // const writing = document.getElementById("write").onmouseover = function(){addingText()};
+        const write = document.getElementById("write").onmouseover = function(){addingText()};
+        function addingText() {
+            let arena = document.createTextNode(" arena");
+            write.append(arena);   
+        }
+    </script>
+     
+</body>
+</html>
