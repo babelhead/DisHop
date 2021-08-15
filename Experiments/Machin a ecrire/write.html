@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machin à écrire</title>
+    
+</head>
+    <style>
+        div {width: 100vw; text-align: center; padding-top: 30px;}
+        p {margin: 50px; text-align: justify;}
+    </style>
+<body>
+    <div>
+        <button type ="button" onclick="changeWord()">Changer de mot</button>
+    </div>
+    <div>
+        <p id="write">arena</p>
+    </div> 
+    <script>
+// const writing = document.getElementById("write").onmouseover = function(){addingText()};
+let write = document.getElementById("write").onmouseover = function(){addingText()};
+var arena = "arena";
+
+function addingText() {
+    let text = document.getElementById("write");
+    let textToAdd = document.createTextNode(" " + arena);
+    text.appendChild(textToAdd);
+} 
+setInterval(addingText, 200);
+    
+
+function changeWord() {
+    clearInterval(write);
+
+    arena = prompt("Nouveau mot préféré:");
+    if (arena == "") {
+        alert("Même plus un seul mot ? Bon alors j'arrête en attendant que tu retrouves tes lunettes...");
+        return;
+        }
+    else {
+        addingText();
+        }
+    }   
+    </script> 
+        
+</body>
+</html>
