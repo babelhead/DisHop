@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Machin à écrire</title>
-    
 </head>
     <style>
         div {width: 100vw; text-align: center; padding-top: 30px;}
@@ -18,7 +17,6 @@
         <p id="write">arena</p>
     </div> 
     <script>
-// const writing = document.getElementById("write").onmouseover = function(){addingText()};
 let write = document.getElementById("write").onmouseover = function(){addingText()};
 var arena = "arena";
 
@@ -27,8 +25,7 @@ function addingText() {
     let textToAdd = document.createTextNode(" " + arena);
     text.appendChild(textToAdd);
 } 
-setInterval(addingText, 200);
-    
+setInterval(addingText, 200);  
 
 function changeWord() {
     clearInterval(write);
@@ -41,8 +38,18 @@ function changeWord() {
     else {
         addingText();
         }
-    }   
-    </script> 
-        
+    }  
+    /* looks dead simple now, but it took me ages to get this right (as in, several hours...), 
+    getting the right variables in the right places, and quite a few bugs I couldn't figure out 
+    - why the prompt doesn't work or keeps popping up, where to put the setInterval() statement, 
+    how to stop the loop when the button is clicked... getting things in the right place is really tricky!
+    And there are so many tiny details of the syntax too, several options at almost each step, etc... 
+    not always straightforward to figure out why a method/form is not working in this specific context, 
+    there are tiny nuances that I often can't yet see, and confusion of variables, and of syntax too easy...
+    I first created a separate loop for the button function, before realising that it can re-call
+    the first repetition function, I only needed to not fix the content od the text but use 
+    a global variable instead, the value of which is first set to be the original "arena", but 
+    can also change to the prompt input value */
+    </script>      
 </body>
 </html>
