@@ -5,7 +5,7 @@
 	margin:0; padding:0;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
 }
-#global {min-height: 800px; background-image: url("background.jpg"); background-attachment: fixed;} 
+#global {min-height: 800px; background-image: url("Media/background.jpg"); background-attachment: fixed;} 
 #menu {margin-left: 150px; margin-right: 150px; background-color:white; opacity: 0.7; border-style: solid; text-align: justify; padding-top: 50px; padding-bottom: 100px; padding-left: 70px; padding-right: 70px; font-size: large;}
 h1 { height:50px; background-color:rgb(0, 0, 0, 0.7); color:white; text-align:center; padding-top: 20px;}
 h2 {text-align:center; padding-top: 20px;}
