@@ -40,6 +40,8 @@ article {border: groove 2px black; padding: 10px; border-radius: 5px; margin-bot
 #menudroit h2, #menugauche h2 { font-size:17px;}
 p.fig {font-size: smaller; text-align: right;}
 #contenu li {margin-left: 40px; text-align: justify; font-size: large;}
+.gallery {align-items: center;}
+.gal {width: 700px;}
 
 span{
     opacity: 0;
