@@ -31,8 +31,8 @@ img {object-fit: contain; opacity:1; border-style:solid; border-color: black; bo
 GOT IT! thanks to Philippe: the attribute "opacity" applies to the content; for the colour one must define it as the 4th property of RGB colour choice*/
 article {border: groove 2px black; padding: 10px; border-radius: 5px; margin-bottom: 20px;}
 /* iframe {width:100%; height:500px; outline:none; padding:none; margin: none;} */
-#menudroit ul, #menugauche ul {list-style-type:none;}
-#menudroit li, #menugauche {text-align: center; }
+#menudroit ul, #menugauche ul, .gallery ul, .image {list-style-type:none;}
+#menudroit li, #menugauche li, .gallery li {text-align: center; }
 #menudroit li {padding: 10px;}
 #menudroit li a, #menugauche li a {color:white; text-decoration: none;}
 #menudroit li a:visited, #menugauche li a:visited { color:white; text-decoration: none;}
@@ -40,9 +40,10 @@ article {border: groove 2px black; padding: 10px; border-radius: 5px; margin-bot
 #menudroit h2, #menugauche h2 { font-size:17px;}
 p.fig {font-size: smaller; text-align: right;}
 #contenu li {margin-left: 40px; text-align: justify; font-size: large;}
-.gallery {align-items: center;}
-.gal {width: 700px;}
-
+.gallery {border-style: solid; overflow:auto; padding:20px; margin:0 50px;  background-color: rgb(255, 255, 255, 0.7);}
+/* .gal {width: 1000px;} */
+.maxheight {max-height: 600px; }
+.maxwidth {max-width: 600px; }
 span{
     opacity: 0;
     transition: all 0.2s ease;
