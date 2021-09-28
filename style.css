@@ -23,7 +23,7 @@ blockquote {padding-left: 15px; padding-right: 15px; padding-bottom: 15px; font-
 #menugauche { float:left; width:110px; background-color: black; opacity: 0.7; color:white; padding:20px;}
 #menudroit { padding:20px;float:right; width:110px; background-color: black; opacity: 0.7; color:white;}
 
-#contenu {border-style: solid; height:500px; overflow:auto; padding:20px; margin:0 50px;  background-color: rgb(255, 255, 255, 0.7) ; text-align: justify;}
+#contenu {border-style: solid; height:500px; overflow:auto; padding:20px; margin:0 50px;  background-color: rgb(255, 255, 255, 0.7); text-align: justify;}
 #contenu p { margin-bottom:20px; font-size: large;}
 img {object-fit: contain; opacity:1; border-style:solid; border-color: black; border-width: 1px; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto;}
 /* got an issue with the image display: how to remove the transparency resulting from the opacity of the background (image and/or color?) 
@@ -40,7 +40,7 @@ article {border: groove 2px black; padding: 10px; border-radius: 5px; margin-bot
 #menudroit h2, #menugauche h2 { font-size:17px;}
 p.fig {font-size: smaller; text-align: right;}
 #contenu li {margin-left: 40px; text-align: justify; font-size: large;}
-.gallery {border-style: solid; overflow:auto; padding:20px; margin:0 50px;  background-color: rgb(255, 255, 255, 0.7);}
+.gallery {border-style: solid; overflow:auto; padding:20px; margin:0 50px; background-color: rgb(255, 255, 255, 0.7);}
 /* .gal {width: 1000px;} */
 .maxheight {max-height: 600px; }
 .maxwidth {max-width: 600px; }
