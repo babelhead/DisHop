@@ -13,6 +13,11 @@
     z-index: 1;
 }
 img {
+    opacity: 0.5;
+    width: 5000px;
+}
+
+#original{
     opacity: 0.3;
     width: 5000px;
 }

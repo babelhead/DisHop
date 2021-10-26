@@ -7,18 +7,18 @@ let i = Math.floor((Math.random())*43);
 // why doesn't the newDiv stay and the next one comes on top? how to make them stay rather than be replaced on each new event?
 image.addEventListener('mousemove', () => {
     let n = 1;
-    let i = Math.floor((Math.random())*43 +1);
+    let i = Math.floor((Math.random())*41 +1);
     newImage.src="media/"+i+".jpg";
-    newDiv.appendChild(newImage);
-    gallery.appendChild(newDiv);
+    newDiv.append(newImage);
+    gallery.append(newDiv);
     newDiv.zIndex="1"+n;
     n += 1;
-    newImage.addEventListener('mousemove', () => {
+   /* newImage.addEventListener('mousemove', () => {
         let i = Math.floor((Math.random())*43+1);
         newImage.src="media/"+i+".jpg";
-        newDiv.appendChild(newImage);
-        gallery.appendChild(newDiv);
-    })
+        newDiv.append(newImage);
+        gallery.append(newDiv);
+    }) */
 })
 
 /*gallery.addEventListener('mouseout', () => {
