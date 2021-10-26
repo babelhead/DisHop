@@ -1,0 +1,18 @@
+#gallery {
+   position:absolute;
+   top: 0px;
+   left: 0px;
+   width: 5000px;
+   height: 5000px;
+}
+.image {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 5000px;
+    z-index: 1;
+}
+img {
+    opacity: 0.3;
+    width: 5000px;
+}
