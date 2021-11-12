@@ -9,7 +9,7 @@
 #global { background-image: url("Media/background.jpg"); width:device-width; position:absolute; }
 #intro {background-color:white; opacity: 0.7; text-align: justify; padding-top: 20px; padding-bottom: 20px; padding-left: 70px; padding-right: 70px; font-size: large;}
 .para {font-family: cursive; font-weight: bold ; text-align: center;}
-h1, h2, #footer { height:50px; background-color:black; opacity: 0.7; color:white; text-align:center; padding-top: 20px;}
+h1, h2, #footer { height:40px; background-color:black; opacity: 0.7; color:white; text-align:center; padding-top: 20px;}
 #footer a:link {color: white; text-decoration: none; text-align:center;}
 #footer a:visited {color: white;text-decoration: none;text-align:center;}
 #footer a:hover {color: rgb(150, 148, 148); text-decoration: none; text-align:center;}
@@ -38,7 +38,7 @@ article {border: groove 2px black; padding: 10px; border-radius: 5px; margin-bot
 #menudroit li a:visited, #menugauche li a:visited { color:white; text-decoration: none;}
 #menudroit li a:hover, #menugauche li a:hover { color:rgb(150, 148, 148); text-decoration: none;}
 #menudroit h2, #menugauche h2 { font-size:17px;}
-p.fig {font-size: smaller; text-align: right;}
+p.fig {font-size:  0.5rem; text-align: right;}
 #contenu li {margin-left: 40px; text-align: justify; font-size: large;}
 .gallery {border-style: solid; overflow:auto; padding:20px; margin:0 50px; background-color: rgb(255, 255, 255, 0.7);}
 /* .gal {width: 1000px;} */
