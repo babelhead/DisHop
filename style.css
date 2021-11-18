@@ -38,7 +38,7 @@ article {border: groove 2px black; padding: 10px; border-radius: 5px; margin-bot
 #menudroit li a:visited, #menugauche li a:visited { color:white; text-decoration: none;}
 #menudroit li a:hover, #menugauche li a:hover { color:rgb(150, 148, 148); text-decoration: none;}
 #menudroit h2, #menugauche h2 { font-size:17px;}
-p.fig {font-size:  0.5rem; text-align: right;}
+p.fig {font-size: 0.5rem; text-align: right;}
 #contenu li {margin-left: 40px; text-align: justify; font-size: large;}
 .gallery {border-style: solid; overflow:auto; padding:20px; margin:0 50px; background-color: rgb(255, 255, 255, 0.7);}
 /* .gal {width: 1000px;} */
