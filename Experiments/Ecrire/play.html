@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Écrire</title>
+    <style media="screen">
+      .rect {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: rgba(255, 0, 0, 0, 0.5)
+        font-family: monospace;
+        font-size: large;
+        text-align: center;
+        animation: fadebackground;
+        animation-duration: 0.5s;
+        border-radius: 0px;
+        z-index: 1;
+        transform: rotate(90deg);
+      }
+      @keyframes fadebackground {
+        from {background-color: white;}
+        to {background-color: rgba(255, 0, 0, 0, 0.5);}
+      }
+
+      button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: none;
+        border: none;
+        color: lightgrey;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 30px;
+        font-family: monospace;
+        z-index: 3;
+        opacity: 0.4;
+        border-radius: 20px;
+      }
+      p {
+        font-family: monospace;
+        font-size: xx-large;
+        text-align: center;
+        margin-top: 50px;
+        padding: 20px;
+
+      }
+    </style>
+
+    <script type="text/javascript">
+      function genererDivs() {
+        for(var i = 0; i < 50; i++) {
+          document.getElementById('espace').innerHTML += "<div class='rect' style='left:"+ (Math.random()*window.innerWidth - Math.random()*window.innerWidth) +"px; width: "+ Math.random()*window.innerWidth + "px; height: "+ Math.random()*window.innerHeight + "px; background-color: rgba(" + Math.random()*255 + ","
+          + Math.random()*255 + "," + Math.random()*255 + "," + Math.random()*0.5 + "); border-radius:" + Math.random()*window.innerWidth + "px; animation-duration:" +  Math.random() + "s; transform: rotate(" + Math.random()*360 + "deg); '><p style='margin-top: "
+          + Math.random()*window.innerHeight + "px;'>écrire</p></div>";
+        }
+      }
+
+    </script>
+  </head>
+  <body>
+
+    <div id="espace" class="">
+      <button type="button" name="button" onclick="genererDivs()">(re)lancer l'écriture</button>
+      <!-- <p>écrire</p> -->
+
+    </div>
+  </body>
+</html>
