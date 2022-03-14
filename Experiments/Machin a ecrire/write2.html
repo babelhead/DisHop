@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machin à écrire</title>
+</head>
+    <style>
+        div {width: 100vw; text-align: center; }
+        p {margin-left: 20px; margin-right: 20px; text-align: justify; font-family: courier; font-size: large;}
+    </style>
+<body>
+    <!--<div>
+        <button type ="button" onclick="changeWord()">Changer de mot</button>
+    </div> -->
+    <div>
+        <p id="write">word</p>
+    </div>
+    <script>
+let write = document.getElementById("write").onmouseover = function(){addingText()};
+var word = "word";
+
+function addingText() {
+    let text = document.getElementById("write");
+    let textToAdd = document.createTextNode(" " + word);
+    text.appendChild(textToAdd);
+}
+setInterval(addingText, 80);
+
+function changeWord() {
+    clearInterval(write);
+
+    arena = prompt("Nouveau mot préféré:");
+    if (arena == "") {
+        alert("Même plus un seul mot ? Bon alors j'arrête en attendant que tu retrouves tes lunettes...");
+        return;
+        }
+    else {
+        addingText();
+        }
+    }
+    /* looks dead simple now, but it took me ages to get this right (as in, several hours...),
+    getting the right variables in the right places, and quite a few bugs I couldn't figure out
+    - why the prompt doesn't work or keeps popping up, where to put the setInterval() statement,
+    how to stop the loop when the button is clicked... getting things in the right place is really tricky!
+    And there are so many tiny details of the syntax too, several options at almost each step, etc...
+    not always straightforward to figure out why a method/form is not working in this specific context,
+    there are tiny nuances that I often can't yet see, and confusion of variables, and of syntax too easy...
+    I first created a separate loop for the button function, before realising that it can re-call
+    the first repetition function, I only needed to not fix the content od the text but use
+    a global variable instead, the value of which is first set to be the original "arena", but
+    can also change to the prompt input value */
+    </script>
+</body>
+</html>
