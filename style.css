@@ -31,6 +31,7 @@ img {object-fit: contain; opacity:1; border-style:solid; border-color: black; bo
 GOT IT! thanks to Philippe: the attribute "opacity" applies to the content; for the colour one must define it as the 4th property of RGB colour choice*/
 article {border: groove 2px black; padding: 10px; border-radius: 5px; margin-bottom: 20px;}
 /* iframe {width:100%; height:500px; outline:none; padding:none; margin: none;} */
+video {margin: auto;}
 #menudroit ul, #menugauche ul, .gallery ul, .image {list-style-type:none;}
 #menudroit li, #menugauche li, .gallery li {text-align: center; }
 #menudroit li {padding: 10px;}
@@ -38,7 +39,7 @@ article {border: groove 2px black; padding: 10px; border-radius: 5px; margin-bot
 #menudroit li a:visited, #menugauche li a:visited { color:white; text-decoration: none;}
 #menudroit li a:hover, #menugauche li a:hover { color:rgb(150, 148, 148); text-decoration: none;}
 #menudroit h2, #menugauche h2 { font-size:17px;}
-p.fig {font-size: 0.5rem; text-align: right;}
+p.fig {font-size: small; text-align: right;}
 #contenu li {margin-left: 40px; text-align: justify; font-size: large;}
 .gallery {border-style: solid; overflow:auto; padding:20px; margin:0 50px; background-color: rgb(255, 255, 255, 0.7);}
 /* .gal {width: 1000px;} */
