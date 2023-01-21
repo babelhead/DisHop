@@ -1,0 +1,11 @@
+* {background-color: lightgrey;}
+#fulop {position:relative;
+width: 500px;
+height: 500px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10vh;
+display: flex;
+justify-content: center;
+align-items: center;}
+p { line-height: 300px; text-align: center; padding: 50px; margin: 20px; font-size: 200px; }
